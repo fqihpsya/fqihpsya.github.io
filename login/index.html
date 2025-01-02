@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login Form Design</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script>
+      import function login() {
+            var email = document.getElementById('email').value;
+            var password = document.getElementById('password').value;
+
+            // Logika login
+            if (email === "admin" && password === "admin") {
+                alert("Anda berhasil login!");
+                // Ganti teks tombol menjadi logout
+            } else {
+                alert("Email atau password salah!");
+            }
+        }
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="myCard">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="myRightCtn">
+              <div
+                class="box d-flex justify-content-center align-items-center fs-1 flex-column"
+              >
+                <h1>Selamat Datang</h1>
+                <h2>Selamat Belanja</h2>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="myLeftCtn">
+              <form class="myForm text-center">
+                <header>LOGIN</header>
+                <div class="form-group">
+                  <i class="fas fa-envelope"></i>
+                  <input
+                    class="myInput"
+                    placeholder="Email"
+                    type="text"
+                    id="email"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <i class="fas fa-lock"></i>
+                  <input
+                    class="myInput"
+                    type="password"
+                    id="password"
+                    placeholder="Password"
+                    required
+                  />
+                </div>
+                <!-- Tombol login -->
+                <a href="../index.html" class="login-button" onclick="login()"
+                  >Login</a
+                >
+                <div class="form-group">
+                  <label>
+                    <small>
+                      Apakah anda sudah memiliki akun ?
+                      <a href="../regis/index.html">register sekarang</a></small
+                    >
+                  </label>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js" defer></script>
+  </body>
+</html>
