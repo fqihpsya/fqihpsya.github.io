@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="img/istockphoto-1424768497-612x612.jpg" alt="" width="30" height="24" class="d-inline-block align-text-top img-fluid">
+          WARUNG
+        </a>
+
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Home</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#about">profil</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#tata-cara">Tutorial</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#transaksi">Transaksi</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#keranjang">keranjang</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <a href="./login/index.html" class="login-button">Login</a>
+        <button
+          class="navbar-toggler pe-8"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </nav>
+    <section class="hero-section">
+      <div
+        class="container d-flex align-items-center justify-content-center fs-1 text-white flex-column"
+      >
+        <h1>Selamat Datang</h1>
+        <h2>Selamat Belanja</h2>
+      </div>
+    </section>
+    <section>
+    <div  class="profile" id="about" class="container mt-5">
+    <div class="row">
+      <h2 class="text-center text-dark mb-5">Tata Cara Transaksi</h2>
+    
+        <div class="col-md-3 ">
+            <div class="profile-sidebar">
+             
+              <img src="./img/263cb030-fa6f-4431-b9a8-f20faa7a5f28.webp" >
+              
+            </div>
+        </div>
+
+        
+        <div class="col-md-8">
+            <div class="profile-info">
+                <h2>Warung</h2>
+                <p>
+                    Halo Guys!!, Kali Ini anda berada di dalam website yang bernama warung. pasti kalian semua sudah tau apa itu warung kan. Nah, Jadi website ini diambil dari kata 'warung', kenapa warung karena warung merupakan kata yang paling identik saat kita ingin belanja seperti belanja sayur, makanan, sembako dan masih banyak lagi. Nah, jadi kami menggunakan kata warung karena website ini merupakan website yang di gunakan untuk melakukan kegiatan belanja secara online yang menawarkan begitu banyak barang.
+                </p>
+                
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+<section>
+
+    <div class="tata" class="container my-5" id="tata-cara">
+      <h2 class="text-center text-dark mb-4">Tata Cara Transaksi</h2>
+
+      <div class="text-center">
+          <!-- Langkah 1 -->
+          <div class="step">
+              <div class="step-circle">1</div>
+              <p>Anda bisa melakukan login dan jika belum memiliki akun silakan melakukan registrasi.</p>
+              <i class="fas fa-arrow-down step-arrow"></i>
+          </div>
+
+          <!-- Langkah 2 -->
+          <div class="step">
+              <div class="step-circle">2</div>
+              <p>Setelah registrasi, Anda bisa melakukan transaksi pada menu transaksi.</p>
+              <i class="fas fa-arrow-down step-arrow"></i>
+          </div>
+
+          <!-- Langkah 3 -->
+          <div class="step">
+              <div class="step-circle">3</div>
+              <p>Setelah masuk transaksi, Anda bisa memilih barang yang diinginkan lalu tekan tombol "Tambahkan ke Keranjang".</p>
+              <i class="fas fa-arrow-down step-arrow"></i>
+          </div>
+
+          <!-- Langkah 4 -->
+          <div class="step">
+              <div class="step-circle">4</div>
+              <p>
+                  Tekan tombol "Checkout". Akan muncul notifikasi apakah ingin menambah barang: tekan <strong>"Oke"</strong> untuk menambah, atau <strong>"Batal"</strong> bila tidak.
+              </p>
+              <i class="fas fa-arrow-down step-arrow"></i>
+          </div>
+
+          <!-- Langkah 5 -->
+          <div class="step">
+              <div class="step-circle">5</div>
+              <p>
+                  Isi formulir dengan data yang diperlukan. Setelah selesai, tekan "Konfirmasi Pembelian". Transaksi selesai!
+              </p>
+          </div>
+      </div>
+  </div>
+  
+
+    <div>
+      <div id="transaksi" class="transaksi" class="container mt-5">
+        <h2 class="mb-4">Transaksi Jual Beli Barang</h2>
+
+        
+
+        <!-- Form Pilihan Barang -->
+        <form id="checkout-form">
+          <div class="mb-3">
+            <label for="barang" class="form-label">Pilih Barang</label>
+            <select id="barang" class="form-select">
+              <option value="Notebook" data-price="50000">
+                Notebook - Rp 50,000
+              </option>
+              <option value="Pensil" data-price="2000">
+                Pensil - Rp 2,000
+              </option>
+              <option value="Buku Tulis" data-price="15000">
+                Buku Tulis - Rp 15,000
+              </option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="jumlah" class="form-label">Jumlah</label>
+            <input
+              type="number"
+              id="jumlah"
+              class="form-control"
+              min="1"
+              value="1"
+            />
+          </div>
+          <button type="button" id="add-to-cart" class="btn btn-success">
+            Tambah ke Keranjang
+          </button>
+        </form>
+
+        <!-- Tabel Keranjang Belanja -->
+         <div class="keranjang">
+        <h3  id = "keranjang"class="mt-5">Keranjang Belanja</h3>
+        <table class="table table-striped" id="cart-table">
+          <thead class="table-success">
+            <tr>
+              <th>Nama Barang</th>
+              <th>Jumlah</th>
+              <th>Harga Satuan</th>
+              <th>Total Harga</th>
+              <th>Aksi</th>
+            </tr>
+          </thead>
+          <tbody id="cart-body"></tbody>
+        </table>
+      </div>
+        <div class="d-flex justify-content-end">
+          <button type="button" id="checkout" class="btn btn-success">
+            Checkout
+          </button>
+        </div>
+      </div>
+      <div id="rekapPembelian" class="card mt-4" style="display:none;">
+        <div class="card-body">
+          <h3>Rekap Pembelian</h3>
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th>Nama Barang</th>
+                <th>Harga Barang</th>
+                <th>Jumlah</th>
+                <th>Total Harga</th>
+              </tr>
+            </thead>
+            <tbody id="rekapTabelBarang">
+              <!-- Rekap Barang Akan Ditampilkan Di Sini -->
+            </tbody>
+          </table>
+          <h4 id="totalRekap"></h4>
+        </div>
+      </div>
+    
+      <!-- Form Checkout Floating -->
+      <div id="formCheckout" class="mt-5" style="display:none; position: fixed; bottom: 10px; left: 50%; transform: translateX(-50%); width: 90%; z-index: 999;">
+        <div class="card">
+          <div class="card-body">
+            <h3>Form Checkout</h3>
+            <form id="formPembeli">
+              <div class="mb-3">
+                <label for="namaPembeli" class="form-label">Nama Lengkap</label>
+                <input type="text" class="form-control" id="namaPembeli" placeholder="Masukkan Nama Lengkap" required>
+              </div>
+              
+              <div class="mb-3">
+                <label for="alamatPembeli" class="form-label">Alamat</label>
+                <input type="text" class="form-control" id="alamatPembeli" placeholder="Masukkan Alamat" required>
+              </div>
+    
+              <div class="mb-3">
+                <label for="nohpPembeli" class="form-label">No. HP</label>
+                <input type="text" class="form-control" id="nohpPembeli" placeholder="Masukkan No. HP" required>
+              </div>
+    
+              <button type="submit" class="btn btn-primary">Konfirmasi Pembelian</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    
+    <!-- Link ke JavaScript Bootstrap 5 dan kode kustom -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="scripts.js"></script>
+  </body>
+</html>
